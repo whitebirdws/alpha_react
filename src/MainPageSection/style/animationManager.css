@@ -1,0 +1,14 @@
+.slideUp {
+  animation: testAni 2s ease-out;
+}
+
+@keyframes testAni {
+  from {
+    transform: translateY(100px);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 0.8;
+  }
+}
