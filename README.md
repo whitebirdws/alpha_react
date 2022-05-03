@@ -11,3 +11,4 @@
 
 ## □.프로젝트의 component 명칭 및 구성
 
+![alphaGuide](https://user-images.githubusercontent.com/104630719/166469174-59665c09-eb9f-4a2e-a326-ceae6cdd3551.png)
