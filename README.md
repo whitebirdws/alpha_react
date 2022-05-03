@@ -9,4 +9,4 @@ alpha_react는 sony_alpha홈페이지 이미지를 참고하여 진행한 토이
 
 # □.component 구성
 
-![alphaGuide](https://user-images.githubusercontent.com/104630719/166454218-9df17509-8a01-43b9-ab13-81588fb75950.png)
+![alphaGuide](https://user-images.githubusercontent.com/104630719/166455217-24078fc3-1e13-4ddf-b83d-dace3ff56278.png)
