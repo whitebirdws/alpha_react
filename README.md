@@ -1,7 +1,7 @@
 
 ![image3](https://user-images.githubusercontent.com/104630719/166418344-0e6403d3-dcd7-4052-8794-ee14d4297197.png)
 # □.웹사이트 URL
-<a href="https://www.naver.com" target:"_blank" >www</a>
+<a href="https://www.naver.com" target="_blank" >www</a>
 # □.alpha_react 
 alpha_react는 sony_alpha홈페이지 이미지를 참고하여 진행한 토이프로젝트 입니다. 
 
