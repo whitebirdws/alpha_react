@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import SliderSection from "../Children/SliderSection";
+import IntroSection from "../Children/IntroSection";
 import MagazineSection from "../Children/MagazineSection";
 import VideoSection from "../Children/VideoSection";
 import EventSection from "../Children/EventSection";
@@ -18,11 +18,13 @@ const ALPHA_MAIN_CONTAINER = styled.div`
   }
 `;
 
+/*<---------- 컴포넌트 ----------->*/
+
 const MainPageSection = () => {
   return (
     <>
       <ALPHA_MAIN_CONTAINER>
-        <SliderSection />
+        <IntroSection />
         <MagazineSection />
         <VideoSection />
         <EventSection />

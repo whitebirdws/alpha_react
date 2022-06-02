@@ -18,124 +18,128 @@ const ALPHA_MAIN_MAGAZINE_SECTION = styled.section`
   @media (max-width: 960px) {
     height: 610px;
   }
-`;
-const MAGAZINE_SECTION_TITLE_GROUP = styled.div`
-  padding-top: 200px;
-  text-align: center;
-  @media (max-width: 960px) {
-    padding-top: 50px;
-  }
-`;
-const TITLE_GROUP_MAIN_TITLE = styled.span`
-  font-size: 2.8em;
-  @media (max-width: 960px) {
-    font-size: 1.8em;
-  }
-`;
-const TITLE_GROUP_MAIN_SUBTITLE = styled.span`
-  font-weight: 100;
-  font-size: 1em;
-  @media (max-width: 960px) {
-    font-size: 0.8em;
-  }
-`;
-const MAGAZINE_SECTION_CONTENTS_CONTAINER = styled.div``;
 
-const CONTENTS_GROUP = styled.ul`
-  display: flex;
-  width: 1170px;
-  justify-content: center;
-  margin: 60px auto 0;
-  overflow: hidden;
-  @media (max-width: 1190px) {
-    width: 100%;
+  div.magazine_title_group {
+    padding-top: 200px;
+    text-align: center;
+    @media (max-width: 960px) {
+      padding-top: 50px;
+    }
+    span.title_group_main_title {
+      font-size: 2.8em;
+      @media (max-width: 960px) {
+        font-size: 1.8em;
+      }
+      span {
+        color: tomato;
+      }
+    }
+    span.title_group_main_subtitle {
+      font-weight: 100;
+      font-size: 1em;
+      @media (max-width: 960px) {
+        font-size: 0.8em;
+      }
+    }
   }
-`;
-const CONTENTS_LIST = styled.li`
-  margin-left: 4.2em;
-  width: 328px;
-  height: 439px;
+  div.magazine_contents_container {
+    ul.contents_group {
+      display: flex;
+      width: 1170px;
+      justify-content: center;
+      margin: 60px auto 0;
+      overflow: hidden;
+      @media (max-width: 1190px) {
+        width: 100%;
+      }
+      li.contents_list {
+        margin-left: 4.2em;
+        width: 328px;
+        height: 439px;
 
-  @media (max-width: 1190px) {
-    margin-left: 2vw;
-    &:last-child {
-      margin-right: 2vw;
-    }
-  }
-  @media (max-width: 960px) {
-    width: 200px;
-  }
-  @media (max-width: 768px) {
-    width: 150px;
-  }
-  @media (max-width: 500px) {
-    margin: 0 auto;
-    &:nth-child(1) {
-      width: 300px;
-    }
-    &:nth-child(2) {
-      display: none;
-    }
-    &:nth-child(3) {
-      display: none;
-    }
-  }
-`;
+        @media (max-width: 1190px) {
+          margin-left: 2vw;
+          &:last-child {
+            margin-right: 2vw;
+          }
+        }
+        @media (max-width: 960px) {
+          width: 200px;
+        }
+        @media (max-width: 768px) {
+          width: 150px;
+        }
+        @media (max-width: 500px) {
+          margin: 0 auto;
+          &:nth-child(1) {
+            width: 300px;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+        div.contents_list_img {
+          width: 100%;
+          height: 294px;
+          @media (max-width: 1100px) {
+            height: 194px;
+          }
+          @media (max-width: 768px) {
+            height: 150px;
+          }
+        }
+        div.contents_list_subtitle_group {
+          width: 328px;
+          height: 145px;
+          background-color: ${(props) => props.backgroundcolor || "#222"};
 
-const CONTENTS_LIST_IMG = styled.div`
-  width: 100%;
-  height: 294px;
-  @media (max-width: 1100px) {
-    height: 194px;
-  }
-  @media (max-width: 768px) {
-    height: 150px;
-  }
-`;
-const CONTENTS_LIST_SUBTITLE_GROUP = styled.div`
-  width: 328px;
-  height: 145px;
-  background-color: ${(props) => props.backgroundColor || "#222"};
-
-  @media (max-width: 960px) {
-    width: 200px;
-  }
-  @media (max-width: 768px) {
-    width: 150px;
-  }
-  @media (max-width: 500px) {
-    &:nth-child(2) {
-      width: 300px;
+          @media (max-width: 960px) {
+            width: 200px;
+          }
+          @media (max-width: 768px) {
+            width: 150px;
+          }
+          @media (max-width: 500px) {
+            &:nth-child(2) {
+              width: 300px;
+            }
+          }
+          div.contents_list_date {
+            padding: 32px 20px 0;
+            color: ${(props) => props.color || "#ccc"};
+          }
+          div.contents_list_subtitle {
+            color: ${(props) => props.color || "#ffffff"};
+            font-size: 1.1em;
+            padding: 10px 20px 36px;
+            @media (max-width: 1100px) {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
     }
   }
-`;
-const CONTENTS_LIST_DATE = styled.div`
-  padding: 32px 20px 0;
-  color: ${(props) => props.color || "#ccc"};
-`;
-const CONTENTS_LIST_SUBTITLE = styled.div`
-  color: ${(props) => props.color || "#ffffff"};
-  font-size: 1.1em;
-  padding: 10px 20px 36px;
-  @media (max-width: 1100px) {
-    font-size: 0.8em;
-  }
-`;
-const MoreDescription = styled.div`
-  color: #e75300;
-  margin-top: 82px;
-  text-align: center;
-  @media (max-width: 960px) {
-    margin-top: -100px;
+  div.more_description {
+    color: #e75300;
+    margin-top: 82px;
+    text-align: center;
+    @media (max-width: 960px) {
+      margin-top: -100px;
+    }
   }
 `;
 
 /*<---------- 컴포넌트 ----------->*/
 
 const MagazineSection = () => {
+  //useRef
   const magazineManagerRef = useRef(null);
   const magazieTitleRef = useRef(null);
-
+  //더미데이터
   const MagazineData = [
     {
       id: 1,
@@ -158,7 +162,7 @@ const MagazineSection = () => {
   ];
 
   const introduceMagazine = () => {
-    const test = MagazineData.map((value) => {
+    const result = MagazineData.map((value) => {
       const contentImg = {
         backgroundImage: `url(${value.img})`,
         backgroundSize: "cover",
@@ -167,25 +171,30 @@ const MagazineSection = () => {
       };
 
       return (
-        <CONTENTS_LIST key={value.id}>
-          <CONTENTS_LIST_IMG style={contentImg} />
+        <li className="contents_list" key={value.id}>
+          <div className="contents_list_img" style={contentImg} />
           {value.id === 2 ? (
-            <CONTENTS_LIST_SUBTITLE_GROUP backgroundColor="#ffffff">
-              <CONTENTS_LIST_DATE color="#222">{value.date}</CONTENTS_LIST_DATE>
-              <CONTENTS_LIST_SUBTITLE color="#222">
+            <div
+              className="contents_list_subtitle_group"
+              backgroundcolor="#ffffff"
+            >
+              <div className="contents_list_date" color="#222">
+                {value.date}
+              </div>
+              <div className="contents_list_subtitle" color="#222">
                 {value.subtitle}
-              </CONTENTS_LIST_SUBTITLE>
-            </CONTENTS_LIST_SUBTITLE_GROUP>
+              </div>
+            </div>
           ) : (
-            <CONTENTS_LIST_SUBTITLE_GROUP>
-              <CONTENTS_LIST_DATE>{value.date}</CONTENTS_LIST_DATE>
-              <CONTENTS_LIST_SUBTITLE>{value.subtitle}</CONTENTS_LIST_SUBTITLE>
-            </CONTENTS_LIST_SUBTITLE_GROUP>
+            <div className="contents_list_subtitle_group">
+              <div className="contents_list_date">{value.date}</div>
+              <div className="contents_list_subtitle">{value.subtitle}</div>
+            </div>
           )}
-        </CONTENTS_LIST>
+        </li>
       );
     });
-    return test;
+    return result;
   };
 
   let [titleHeight, setTitleHeight] = useState(0);
@@ -205,23 +214,23 @@ const MagazineSection = () => {
   }, [titleHeight]);
   return (
     <ALPHA_MAIN_MAGAZINE_SECTION>
-      <MAGAZINE_SECTION_TITLE_GROUP ref={magazieTitleRef}>
-        <TITLE_GROUP_MAIN_TITLE>
-          MAGAZINE<span style={{ color: "tomato" }}>.</span>
-        </TITLE_GROUP_MAIN_TITLE>
+      <div className="magazine_title_group" ref={magazieTitleRef}>
+        <span className="title_group_main_title">
+          MAGAZINE<span>.</span>
+        </span>
 
-        <TITLE_GROUP_MAIN_SUBTITLE>
+        <span className="title_group_main_subtitle">
           <br /> 소니 카메라 제품의 새로운 소식과 프로들의 사진 촬영 노하우와
           <br />
           제품 관련 최신 뉴스를 지금 확인해 보세요!
-        </TITLE_GROUP_MAIN_SUBTITLE>
-      </MAGAZINE_SECTION_TITLE_GROUP>
-      <MAGAZINE_SECTION_CONTENTS_CONTAINER>
-        <CONTENTS_GROUP ref={magazineManagerRef}>
+        </span>
+      </div>
+      <div className="magazine_contents_container">
+        <ul className="contents_group" ref={magazineManagerRef}>
           {introduceMagazine()}
-        </CONTENTS_GROUP>
-      </MAGAZINE_SECTION_CONTENTS_CONTAINER>
-      <MoreDescription>더 많은 매거진 보러가기&rarr; </MoreDescription>
+        </ul>
+      </div>
+      <div className="more_description">더 많은 매거진 보러가기&rarr; </div>
     </ALPHA_MAIN_MAGAZINE_SECTION>
   );
 };
